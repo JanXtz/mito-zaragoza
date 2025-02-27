@@ -1,14 +1,25 @@
-
-
 <div class="home-container">
-    <h1>Bienvenido a Mito Zaragoza</h1>
+    <div class="banner">
 
-    <img>
+        <video autoplay loop muted playsinline>
+            <source src="assets/banner.mp4" width="100%" height="100%" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+        </video>
+
+    </div>
+
+    <div class="botonera">
+        <img src="assets/banner.jpeg" alt="Imagen Principal">
+
+        <div class="frase">
+            <h1 class="marca">Frase de la marca:</h1>
+            <p class="descripcion">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."</p>
+            <button class="btn-catalogo">Botón al catálogo</button>
+        </div>
+        
+    </div>
+
     <p>Explora nuestra historia y descubre nuestros productos.</p>
-    
-    <p class="btn-shine">Frase de la marca</p>
 
-
-    <button (click)="goToLogin()">Iniciar Sesión</button>
+    <button (click)="goToLogin()">Regresar Arriba</button>
 </div>
-  
