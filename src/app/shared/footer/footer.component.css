@@ -7,10 +7,21 @@
     position: relative;
 }
 
+p{
+    padding-top: 10px;
+}
   
 .botonera {
     display: flex;
     align-items: center; /* Centra horizontalmente */
     justify-content: center; /* Centra verticalmente */
     height: 35px; /* Ajusta la altura del footer según necesidad */
+    margin-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+a{
+    padding-right: 10px;
+    padding-left: 10px;
 }

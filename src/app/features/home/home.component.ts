@@ -10,7 +10,11 @@ import { Router } from '@angular/router';
 export class HomeComponent {
   constructor(private router: Router) {}
 
-  goToLogin() {
-    this.router.navigate(['/auth']);
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
   }
+  
 }

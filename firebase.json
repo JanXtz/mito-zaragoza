@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/mito-zaragoza",
+    "public": "dist/mito-zaragoza/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
