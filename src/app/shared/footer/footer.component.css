@@ -1,27 +1,29 @@
 .footer {
-    width: 100%;
-    background-color: #343a40;
-    color: white;
+    background-color: #d9d9d9; /* Color de fondo similar al de la imagen de referencia */
+    padding: 20px;
     text-align: center;
-    font-size: 14px;
-    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
-p{
-    padding-top: 10px;
-}
-  
-.botonera {
+.footer-content {
     display: flex;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    height: 35px; /* Ajusta la altura del footer según necesidad */
-    margin-top: 10px;
-    padding-bottom: 20px;
-
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
 }
 
-a{
-    padding-right: 10px;
-    padding-left: 10px;
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-item img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: auto;
 }

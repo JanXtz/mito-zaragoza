@@ -2,13 +2,15 @@
     <div class="banner">
 
         <video autoplay loop muted playsinline>
-            <source
-                src="https://firebasestorage.googleapis.com/v0/b/cbpeh-8aa3c.appspot.com/o/banner.mp4?alt=media&token=28e776b0-4a83-470c-9c4b-399c7eaa9e29"
-                type="video/mp4">
+            <source src="" type="video/mp4">
             Tu navegador no soporta videos en HTML5.
         </video>
     </div>
-    <div class="espacio2"></div>
+
+    <div class="espacio">
+        <hr class="linea-blanca">
+    </div>
+
     <div class="botonera">
         <div class="botonera-imagen">
             <img src="assets/banner.jpeg" alt="Imagen Principal">
@@ -16,7 +18,8 @@
         <div class="botonera-texto">
             <h1 class="marca">"Donde el fuego se vuelve sabor."</h1>
             <p class="descripcion">Forjado por el fuego, nacido de la tierra, con el alma libre de quien lo bebe.</p>
-            <button class="btn-catalogo">Botón al catálogo</button>
+            <button class="btn-catalogo" [routerLink]="['/catalogo']">Ver Catálogo</button>
+
         </div>
     </div>
     <div class="espacio"></div>

@@ -1,0 +1,30 @@
+<div class="catalogo-container">
+
+    <div class="espacio">
+        <hr class="linea-blanca">
+    </div>
+    
+    <!-- Encabezado -->
+    <h1 class="titulo">El Mito de Zaragoza</h1>
+    <p class="descripcion">
+        Texto informativo de la historia del mezcal en general.
+    </p>
+
+    <!-- Botones de navegación -->
+    <button class="nav-btn left-btn" (click)="scrollLeft()">❮</button>
+    <button class="nav-btn right-btn" (click)="scrollRight()">❯</button>
+
+    <!-- Galería de Productos -->
+    <div class="productos" #scrollContainer>
+        <div *ngFor="let producto of productos" class="producto-card">
+            <a [routerLink]="['/producto', producto.idB]">
+                <img *ngIf="producto.rutaImage" [src]="producto.rutaImage" alt="{{ producto.nombre }}">
+            </a>
+            <h2>{{ producto.nombre }}</h2>
+            <p><span style="color: #007bff;">${{ producto.precio }}</span></p>
+        </div>
+    </div>
+
+    <!-- Botón de Regreso -->
+    <button class="btn-regresar" [routerLink]="['/']">Regresar al Inicio</button>
+</div>

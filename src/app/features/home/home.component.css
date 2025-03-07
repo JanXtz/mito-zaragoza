@@ -184,12 +184,10 @@
     transition-duration: 0.3s;
   }
   
-  .espacio {
-    height: 50px; /* Ajusta la altura del espacio */
-    width: 100%;
+.espacio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
 }
 
-.espacio2 {
-    height: 60px; /* Ajusta la altura del espacio */
-    width: 100%;
-}

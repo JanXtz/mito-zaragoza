@@ -1,0 +1,115 @@
+.producto-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #041226;
+    color: white;
+    max-width: 1200px; 
+    margin-bottom: 50px; 
+}
+
+/* Contenedor general para centrar todo */
+.producto-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #041226;
+    min-height: 100vh; 
+    padding-top: 100px;
+}
+
+/* Imagen del producto */
+.producto-imagen img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Información del producto */
+.producto-info {
+    text-align: left;
+    max-width: 500px;
+}
+
+/* Título */
+.producto-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Precio */
+.precio {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.btn-comprar, .btn-regresar {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Botón Comprar */
+.btn-comprar {
+    background-color: #ffffff;
+    color: black;
+}
+
+.btn-comprar:hover {
+    background-color: #a9a9a9;
+}
+
+/* Botón Regresar */
+.btn-regresar {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+}
+
+.btn-regresar:hover {
+    background-color: #5a6268;
+}
+
+.producto-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+/* Título centrado */
+.producto-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Precio centrado */
+.producto-header .precio {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 18px;
+    color: #d1d1d1; /* Un gris claro para que no sea demasiado fuerte */
+    line-height: 1.5; /* 📌 Espaciado adecuado para mejorar la lectura */
+    text-align: justify; /* 📌 Justifica el texto para una mejor apariencia */
+    margin-bottom: 15px;
+}
+
+/* Maestro Mezcalero */
+.maestro {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff; /* 📌 Un dorado más llamativo */
+    margin-bottom: 20px;
+}

@@ -2,3 +2,11 @@
     font-family: "EB Garamond", serif !important;
     margin: 0px;
 }
+
+.linea-blanca {
+    border: none;
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    width: 86%; /* Ajusta el ancho según sea necesario */
+}
