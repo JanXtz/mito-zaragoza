@@ -1,0 +1,143 @@
+/* Contenedor principal */
+.producto-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; /* 🔥 Aumentamos el espacio entre imagen e información */
+    flex-wrap: wrap;
+    background-color: #041226;
+    color: white;
+    max-width: 1600px; /* 🔥 Aumentamos el tamaño máximo */
+    margin-bottom: 50px;
+}
+
+/* Página completa */
+.producto-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #041226;
+    padding-top: 80px;
+}
+
+/* Imagen de la receta */
+.producto-imagen img {
+    width: 500px; /* 🔥 Aumentamos el tamaño */
+    height: 350px; /* 🔥 Aumentamos el tamaño */
+    object-fit: cover; /* ✅ Asegura que no se deforme la imagen */
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* 🔥 Aumentamos la sombra */
+}
+
+/* Información de la receta */
+.producto-info {
+    text-align: left;
+    max-width: 700px; /* 🔥 Aumentamos el ancho para permitir más texto */
+}
+
+/* Título */
+.producto-info h1 {
+    font-size: 42px; /* 🔥 Aumentamos el tamaño del título */
+    margin-bottom: 15px;
+}
+
+/* Ingredientes e instrucciones */
+.producto-info h3 {
+    font-size: 28px; /* 🔥 Aumentamos el tamaño del subtítulo */
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+/* Lista de ingredientes */
+.producto-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px; /* 🔥 Aumentamos el tamaño */
+}
+
+/* Instrucciones */
+.producto-info p {
+    font-size: 20px; /* 🔥 Aumentamos el tamaño */
+    line-height: 1.8; /* ✅ Mejoramos la legibilidad */
+    color: #d1d1d1;
+}
+
+/* Contenedor del título */
+.producto-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Título centrado */
+.producto-header h1 {
+    font-size: 50px; /* 🔥 Hacemos el título más grande */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Línea blanca debajo del título */
+.linea-blanca {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+.btn-comprar, .btn-regresar {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-regresar {
+    background-color: #e6e6e6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-regresar:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+/* 🔥 RESPONSIVE: Ajustamos tamaños para pantallas pequeñas */
+@media (max-width: 768px) {
+    .producto-imagen img {
+        width: 100%; /* ✅ Imagen adaptable */
+        height: auto;
+    }
+
+    .producto-info {
+        max-width: 100%; /* ✅ Para que se ajuste al tamaño de pantalla */
+    }
+
+    .producto-header h1 {
+        font-size: 36px;
+    }
+
+    .producto-info h1 {
+        font-size: 32px;
+    }
+
+    .producto-info h3 {
+        font-size: 24px;
+    }
+
+    .producto-info p,
+    .producto-info ul {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,36 @@
+<div class="producto-page">
+
+        <hr class="linea-blanca">
+
+
+    <div *ngIf="receta">
+
+        <!-- Nuevo contenedor para centrar el título y precio -->
+        <div class="producto-header">
+            <h1>- Cocteles -</h1>
+        </div>
+
+        <div class="producto-container">
+
+            <div class="producto-info">
+                <h1>{{ receta.nombre }}</h1>
+                <h3>Ingredientes:</h3>
+                <ul><li *ngFor="let ingrediente of receta.ingredientes">{{ ingrediente }}</li></ul>
+                <h3>Instrucciones:</h3>
+                <p>{{ receta.instrucciones }}</p>
+            </div>
+
+            <div class="producto-imagen">
+                <img [src]="receta.rutaImage" alt="{{ receta.nombre }}">
+            </div>
+
+        </div>
+
+    </div>
+    <hr class="linea-blanca">
+
+    <!-- Botón centrado debajo del producto -->
+    <button class="btn-regresar" [routerLink]="['/recetas']">Regresar a las Recetas</button>
+
+
+</div>

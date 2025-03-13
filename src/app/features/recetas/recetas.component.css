@@ -1,0 +1,114 @@
+/* Contenedor Principal */
+.catalogo-container {
+    text-align: center;
+    padding-top:  100px; 
+    color: white; /* Asegurar texto blanco */
+    background-color: #041226; /* Fondo oscuro */
+}
+
+/* Título */
+.titulo {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white; /* Asegura que sea visible en fondo oscuro */
+}
+
+/* Sección de Productos */
+.recetas {
+    display: flex;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Mantiene los recetas alineados */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribución automática */
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: center;
+    padding: 20px;
+    scroll-behavior: smooth; /* Suaviza el desplazamiento */
+}
+
+/* Botones de navegación */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+/* Tarjetas de producto */
+.recetas-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.recetas-card:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes de los recetass */
+.recetas-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Títulos y precio */
+.recetas-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.recetas-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.espacio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+/* Botón de regreso */
+.btn-regresar {
+    background-color: #e6e6e6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-regresar:hover {
+    background-color: rgb(188, 188, 188);
+}

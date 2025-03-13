@@ -1,0 +1,96 @@
+/* Página completa */
+.logros-page {
+    background-color: #041226;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Título */
+.titulo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.titulo h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #ffd700;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de logros */
+.logros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Ajuste flexible */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Tarjetas de logros */
+.logro-card {
+    background-color: #ffffff;
+    color: #041226;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.logro-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen de cada logro */
+.logro-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Descripción y año */
+.logro-card .descripcion {
+    font-size: 16px;
+    color: #041226;
+    margin-bottom: 5px;
+}
+
+.logro-card .año {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Imagen inferior */
+.imagen-inferior img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.imagen-inferior p {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #041226;
+    padding: 10px;
+}
+
+.espacio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.espacio2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}

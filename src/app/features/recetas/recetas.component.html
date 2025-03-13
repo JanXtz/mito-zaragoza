@@ -1,0 +1,26 @@
+<div class="catalogo-container">
+
+    <div class="espacio">
+        <hr class="linea-blanca">
+    </div>
+
+    <!-- Encabezado -->
+    <h1 class="titulo">Nuestras Recetas</h1>
+
+    <!-- Botones de navegación -->
+    <button class="nav-btn left-btn" (click)="scrollLeft()">❮</button>
+    <button class="nav-btn right-btn" (click)="scrollRight()">❯</button>
+
+    <!-- Galería de Productos -->
+
+    <div class="recetas">
+        <div *ngFor="let receta of recetas" class="recetas-card">
+            <img *ngIf="receta.rutaImage" [src]="receta.rutaImage" alt="{{ receta.nombre }}">
+            <h2>{{ receta.nombre }}</h2>
+            <button class="btn-ver-detalle" [routerLink]="['/receta', receta.idR]">Ver Receta</button>
+        </div>
+    </div>
+
+    <!-- Botón de Regreso -->
+    <button class="btn-regresar" [routerLink]="['/']">Regresar al Inicio</button>
+</div>
